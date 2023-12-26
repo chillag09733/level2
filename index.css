@@ -17,7 +17,7 @@
   font-family: Roboto mono;
 }
 html {
-  height: 100%;
+  height: fit-content;
   background-image: linear-gradient(
     to bottom right,
     black,
@@ -34,7 +34,8 @@ body {
   padding-inline: 5rem;
 }
 .buttons a,
-.grid a {
+.grid a,
+.monsters a {
   display: inline-block;
   transition: ease-in-out 0.25s;
   border: 2px solid black;
@@ -86,7 +87,11 @@ p,
 .grid {
   padding-block: 5px;
 }
-h1{
+h1 {
   font-family: SPN;
   text-align: center;
+}
+.monsters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
