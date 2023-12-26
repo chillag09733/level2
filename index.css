@@ -1,10 +1,92 @@
+@font-face {
+  font-family: SPN;
+  src: url(fonts/Supernatural_Knight.ttf);
+}
+@font-face {
+  font-family: Roboto mono;
+  src: url(fonts/RobotoMono-Light.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   margin-inline: auto;
+  color: black;
+  font-size: 15px;
+  font-family: Roboto mono;
 }
-body{
-    background-image: linear-gradient(top left to bottom right, red, black);
-  
+html {
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    black,
+    #590d22,
+    #800f2f,
+    #c9184a,
+    #ef476f
+  );
+}
+body {
+  background-color: white;
+  margin-inline: 20rem;
+  padding-top: 1rem;
+  padding-inline: 5rem;
+}
+.buttons a,
+.grid a {
+  display: inline-block;
+  transition: ease-in-out 0.25s;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 6rem;
+  text-decoration: none;
+  text-align: center;
+}
+.buttons a:hover,
+.grid a:hover {
+  background-color: black;
+  color: white;
+}
+header {
+  display: grid;
+  grid-template-columns: auto 4rem 4rem 4rem 4rem 7rem;
+}
+header h2 {
+  font-family: SPN;
+  margin: 0;
+  font-size: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+main {
+  display: grid;
+  grid-template-columns: auto 250px;
+  margin-top: 2rem;
+}
+main .img img {
+  width: 250px;
+}
+.buttons .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+main h3 {
+  font-size: 20px;
+}
+main h2,
+h3,
+p,
+.grid {
+  padding-block: 5px;
+}
+h1{
+  font-family: SPN;
+  text-align: center;
 }
