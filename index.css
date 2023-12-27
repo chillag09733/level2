@@ -103,20 +103,14 @@ h1 {
 .monsters a img{
   height: 25px;
 }
-table{
-  width: 100%;
-  border-collapse: collapse;
+.middle{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-th img{
+.episodes img{
   width: 150px;
   height: 96px;
-  text-align: left;
 }
-td img{
+.star img{
   width: 12px;
-}
-@media screen and (max-width: 600px) {
- table{
-  overflow-x: auto;
- }
 }
