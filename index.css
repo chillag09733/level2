@@ -106,7 +106,6 @@ h1 {
 table{
   width: 100%;
   border-collapse: collapse;
-  overflow-x: auto;
 }
 th img{
   width: 150px;
@@ -115,4 +114,9 @@ th img{
 }
 td img{
   width: 12px;
+}
+@media screen and (max-width: 600px) {
+ table{
+  overflow-x: auto;
+ }
 }
