@@ -27,9 +27,15 @@ body {
   background-color: white;
   margin-inline: 20rem;
   padding-top: 1rem;
+}
+header,
+main,
+article,
+aside {
   padding-inline: 5rem;
 }
-.buttons a,.grid a,
+.buttons a,
+.grid a,
 .monsters a {
   display: inline-block;
   transition: ease-in-out 0.25s;
@@ -39,12 +45,26 @@ body {
   text-decoration: none;
   text-align: center;
 }
-.buttons a:hover, .grid a:hover{
+.secondary a {
+  display: block;
+  width: 7rem;
+  padding: 3px;
+  transition: ease-in-out 0.25s;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 7rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+.buttons a:hover,
+.grid a:hover,
+.secondary a:hover {
   background-color: black;
   color: white;
 }
-.monsters a:hover{
-    background-color: #ba181b;
+.monsters a:hover {
+  background-color: #ba181b;
 }
 header {
   display: grid;
@@ -93,24 +113,77 @@ h1 {
   justify-content: center;
   padding: 5px;
 }
-.monsters a{
+.monsters a {
   display: grid;
   grid-template-rows: auto auto;
   padding-block: 2px;
   border: 2px solid #ba181b;
   background-color: #f5f3f4;
 }
-.monsters a img{
+.monsters a img {
   height: 25px;
 }
-.middle{
+.middle {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.episodes img{
+.episodes img {
   width: 150px;
   height: 96px;
 }
-.star img{
+.star img {
   width: 12px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  background-image: linear-gradient(
+    to bottom left,
+    #495057,
+    #6c757d,
+    #adb5bd,
+    white,
+    #adb5bd,
+    #6c757d,
+    #495057
+  );
+  padding-block: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+footer img {
+  height: 200px;
+  width: 200px;
+}
+ol {
+  margin-left: 1.5rem;
+}
+footer h2 {
+  font-family: SPN;
+}
+footer h2,
+li,
+footer .buttons {
+  padding-block: 5px;
+}
+@media screen and (max-width: 700px) {
+  body {
+    margin-inline: 1rem;
+    padding-inline: 1rem;
+  }
+  header,
+  main,
+  .monsters,
+  .middle,
+  footer {
+    grid-template-columns: 1fr;
+    padding-inline: 1rem;
+  }
+  .buttons a,
+  .grid a,
+  .monsters a,
+  .secondary a {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
